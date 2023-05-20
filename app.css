@@ -1,0 +1,269 @@
+body {
+    background-color: transparent; 
+}
+
+#phone {
+    /*border: 2px solid red;*/
+    border-radius: 20px;
+    width: 540px;
+    height: 940px;
+    padding: 20px 10px;
+    background-image: radial-gradient(#567 70%, #123);
+    box-shadow: 0 0 9px 5px black;
+    
+}
+
+#screen {
+    position: relative;
+    width: 540px;
+    height: 940px;
+    background-color: black;
+    background-image: url(donut.jpg);
+    box-shadow: inset 0 0 6px 2px #222;
+} 
+
+
+#camera {
+    width: 20px;
+    height: 20px;
+    border: solid 3px black;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    background-image: radial-gradient(#999, #333 60%);
+    top: 50px;
+    left: 280px;
+}
+
+#block-button {
+    width: 10px;
+    height: 150px;
+    border: solid 0 1px 1px 1px black;
+    border-radius: 0% 30% 30% 0%;
+    position: absolute;
+    background-image: radial-gradient(#567 70%, #123);
+    left: 285px;
+    top: 150px;
+}
+#volume-button {
+    width: 10px;
+    height: 230px;
+    border: solid 0 1px 1px 1px black;
+    border-radius: 30% 0 0 30%;
+    position: absolute;
+    background-image: radial-gradient(#567 70%, #123);
+    right: 294px;
+    top: 100px;
+}
+
+#screen header {
+    background-color: transparent;
+    height: 5%;
+}
+#screen section {
+    background-color: transparent;
+    height: 80%;
+    font-family: arial;
+    padding: 1px;
+    text-align: center;
+}
+#screen footer {
+    background-color: transparent;
+    height: 15%;
+}
+#screen section h1 {
+    font-size: 100px;
+    margin-top: 250px;
+    margin-bottom: 0;
+}
+#screen #lock {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 4, 80, 0.518);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#screen #lock-overlay input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+    
+
+}
+
+#screen #lock-overlay input:nth-child(1) {
+    top: -200px;
+    left: -200px;
+}
+#screen #lock-overlay input:nth-child(2) {
+    top: -200px;
+}
+#screen #lock-overlay input:nth-child(3) {
+    top: -200px;
+    right: -200px;
+}
+#screen #lock-overlay input:nth-child(4) {
+    left: -200px;
+}
+#screen #lock-overlay input:nth-child(6) {
+    right: -200px;
+}
+#screen #lock-overlay input:nth-child(7) {
+    bottom: -200px;
+    left: -200px;
+}
+#screen #lock-overlay input:nth-child(8) {
+    bottom: -200px;
+}
+#screen #lock-overlay input:nth-child(9) {
+    bottom: -200px;
+    right: -200px;
+}
+
+#screen #lock-overlay a {
+    position: absolute;
+    z-index: 2;
+    background: white;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    bottom: -300px;
+    left: 0;
+    margin: auto;
+    display: none;
+}
+
+
+input:not(:checked) +
+input:not(:checked) +
+input:checked +  
+input:not(:checked) + 
+input:checked +  
+input:not(:checked) + 
+input:checked + 
+input:not(:checked) + 
+input:not(:checked) +  #lock {
+    display: none;
+}
+
+input:not(:checked) +
+input:not(:checked) +
+input:checked +  
+input:not(:checked) + 
+input:checked +  
+input:not(:checked) + 
+input:checked + 
+input:not(:checked) + 
+input:not(:checked) +  #lock + a {
+    display: block !important;
+}
+
+#lock-overlay:target {
+    display: none;
+}
+
+
+
+
+
+
+
+#battery {
+    width: 40px;
+    height: 30px;
+    background-size: 35px;
+    background-image: url(battery.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    left: 500px; 
+    margin-top: 3px;
+    
+}
+
+#antena {
+    width: 40px;
+    height: 27px;
+    background-size: 35px;
+    background-image: url(antena.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    left: 455px; 
+    margin-top: 5px;
+}
+#wifi {
+    width: 40px;
+    height: 30px;
+    background-size: 35px;
+    background-image: url(wifi.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    left: 405px; 
+    margin-top: 3px;
+}
+#time {
+    width: 70px;
+    height: 30px;
+    background-size: 45px;
+    background-image: url(time.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    left: 20px; 
+    margin-top: 3px;
+}
+#call {
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    border: solid 1px greenyellow;
+    border-radius: 100%;
+    background-image: url(call.svg);
+    background-position: center;
+    background-color: greenyellow;
+    background-size: 60px;
+    background-repeat: no-repeat;
+    margin-left: 90px;
+    margin-right: 180px;
+   
+}
+#cancel {
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    border: solid 1px red;
+    border-radius: 100%;
+    background-image: url(call\ cancel.svg);
+    background-position: center;
+    background-color: red;
+    background-size: 70px;
+    background-repeat: no-repeat; 
+}
+
+
